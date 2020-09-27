@@ -1,0 +1,18 @@
+mixin item(title, descr)
+  .item
+    h2.item-title= title
+    p.item-descr= descr
+
+mixin burger(condition)
+  button.burger(class= condition)
+    b.burger__line
+    b.burger__line
+    b.burger__line
+
+mixin slider(vals)
+  .glide
+    .glide__track(data-glide-el='track')
+      ul.glide__slides
+        each val in vals
+          li.glide__slide
+            img.img-responsive(src= val, alt="")

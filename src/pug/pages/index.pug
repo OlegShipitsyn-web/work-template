@@ -1,0 +1,33 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Webpack + Pug';
+  - var description = "width=device-width, initial-scale=1";
+  - var pageClass = 'page';
+
+block content
+  #container1
+    .status(data-da="adapt,1,500,min") FN
+    .status FG
+    .status HN
+
+  #container2
+  .adapt
+  .container
+    .row
+      .col-2
+      .col-8
+        button.open-modal.btn.btn-primary Open Modal
+        button.tip.btn.btn-primary.ml-2 Tooltip
+      .col-2
+    .row
+      .col.mt-5
+        h2.text-center Slider
+    .row
+      .col
+        +slider([ 
+                  'assets/img/1.jpg',
+                  'assets/img/2.jpg',
+                  'assets/img/3.jpg',
+                  'assets/img/4.jpg'
+                ])

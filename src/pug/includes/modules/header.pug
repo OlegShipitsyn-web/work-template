@@ -1,0 +1,22 @@
+include ../../utils/mixins
+
+nav.navigation#navigation
+header.header.p-3
+  .container
+    .header__inner#header__inner.d-flex.justify-content-between.align-items-center
+      h1 Header
+      nav.navigation-1#navigation-from
+        ul.navigations__list.d-flex
+          li.navigations__item
+            a.navigations__link.text-white(href='')
+              u Home
+          li.navigations__item
+            a.navigations__link.text-white(href='')
+              u About
+          li.navigations__item
+            a.navigations__link.text-white(href='')
+              u Product
+          li.navigations__item
+            a.navigations__link.text-white(href='')
+              u App
+      +burger

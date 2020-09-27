@@ -1,0 +1,18 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Webpack + Pug';
+  - var description = "width=device-width, initial-scale=1";
+  - var pageClass = 'page';
+
+block content
+  section
+    .container
+      +item('item title', 'item descrf')
+      +item('item title', 'item descr')
+      +item('item title', 'item descr')
+    .container
+      .row
+        .col-3.col-lg-10(active = 'true') FF
+        .col-3.col-lg-1 DD
+        .col-6.col-lg-1 MD
