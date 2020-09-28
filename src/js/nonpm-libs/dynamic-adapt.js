@@ -6,7 +6,7 @@
 
 "use strict";
 
-export const adapt = function () {
+export const adapt = (function () {
 	let originalPositions = [];
 	let daElements = document.querySelectorAll('[data-da]');
 	let daElementsArray = [];
@@ -134,7 +134,7 @@ export const adapt = function () {
 	function customAdapt() {
 		//const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	}
-};
+})();
 
 /*
 let block = document.querySelector('.click');

@@ -31,6 +31,6 @@ export const toggleAppend = (elems, parentId) => {
     }
 }
 
-export function EnableExtraArrayMethods(){
-    Array.prototype.reject = function(fn){ return this.filter(x => !fn(x)) }
-}
+export const EnableExtraArrayMethods = (() => Array.prototype.reject = function(fn){ return this.filter(x => !fn(x)) })()
+
+

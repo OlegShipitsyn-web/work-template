@@ -1,4 +1,5 @@
 import * as tingle from 'tingle.js/src/tingle.js'
+import { d, appendElems, toggleAppend, EnableExtraArrayMethods } from '../utils/utils.js'
 
 
 const modalOptions_default = {
@@ -38,3 +39,7 @@ modal.addFooterBtn('Dangerous action !', 'tingle-btn tingle-btn--danger', functi
     // here goes some logic
     modal.close();
 });
+
+const modalBtn = d.querySelector('.open-modal')
+
+if (modalBtn) modalBtn.onclick = () => modal.open()
